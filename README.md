@@ -28,6 +28,41 @@ To run this website locally:
 
 This website is deployed to Netlify at [chlorine.k2lang.org](https://chlorine.k2lang.org).
 
+### Manual Deployment to Netlify
+
+If you're experiencing issues with automatic deployment, follow these steps for manual deployment:
+
+1. Log in to your Netlify account at [netlify.com](https://app.netlify.com/)
+
+2. Go to "Sites" and click on your site (or create a new one)
+
+3. Go to "Deploys" tab
+
+4. Click on "Deploy settings"
+
+5. Under "Build settings":
+   - Set "Base directory" to blank (no value)
+   - Set "Build command" to blank (no value)
+   - Set "Publish directory" to `.` (just a dot)
+
+6. Save these settings
+
+7. Go back to the "Deploys" tab
+
+8. Click "Trigger deploy" > "Deploy site"
+
+9. If you continue to experience issues, try the manual deploy option:
+   - Click "Deploy manually"
+   - Drag and drop the entire website folder from your local machine
+   - This bypasses any configuration issues
+
+### Setting Up Custom Domain
+
+1. Once deployed, go to "Site settings" > "Domain management"
+2. Click "Add custom domain"
+3. Enter "chlorine.k2lang.org" and follow the instructions
+4. After the domain is verified and DNS is configured, enable HTTPS
+
 ## Adding New ISO Files
 
 When a new version of Chlorine Linux is released:
