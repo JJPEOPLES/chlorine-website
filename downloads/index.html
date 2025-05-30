@@ -21,7 +21,7 @@
                     <li><a href="../index.html#download">Download</a></li>
                     <li><a href="../index.html#desktops">Desktop Environments</a></li>
                     <li><a href="../index.html#documentation">Documentation</a></li>
-                    <li><a href="https://github.com/yourusername/chlorine" target="_blank">GitHub</a></li>
+                    <li><a href="https://github.com/JJPEOPLES/chlorine" target="_blank">GitHub</a></li>
                 </ul>
             </nav>
         </div>
@@ -32,26 +32,51 @@
             <h1>Chlorine Linux Downloads</h1>
             <p>Download the latest and previous versions of Chlorine Linux.</p>
             
+            <div class="download-section special-notice">
+                <h2>ISO Download Portal</h2>
+                <p>Chlorine Linux ISO files are hosted on a separate storage service to ensure reliable downloads of large files.</p>
+                <p>Visit our <a href="https://storage.chlorine.k2lang.org" class="button primary">ISO Download Portal</a> to access all available ISO files.</p>
+                <p>This approach allows us to provide faster downloads and better reliability for large ISO files.</p>
+            </div>
+            
             <div class="download-section">
-                <h2>Latest Release</h2>
+                <h2>Available Versions</h2>
                 <div class="download-table">
                     <table>
                         <thead>
                             <tr>
                                 <th>Version</th>
                                 <th>Release Date</th>
-                                <th>File</th>
+                                <th>Desktop</th>
+                                <th>Architecture</th>
                                 <th>Size</th>
-                                <th>SHA256 Checksum</th>
+                                <th>Notes</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>1.0</td>
                                 <td>May 30, 2025</td>
-                                <td><a href="chlorine-1.0.iso">chlorine-1.0.iso</a></td>
-                                <td>Coming soon</td>
-                                <td>Coming soon</td>
+                                <td>KDE Plasma</td>
+                                <td>x86_64</td>
+                                <td>~2.5 GB</td>
+                                <td>Recommended for modern systems</td>
+                            </tr>
+                            <tr>
+                                <td>1.0</td>
+                                <td>May 30, 2025</td>
+                                <td>GNOME</td>
+                                <td>x86_64</td>
+                                <td>~2.3 GB</td>
+                                <td>Modern desktop experience</td>
+                            </tr>
+                            <tr>
+                                <td>1.0</td>
+                                <td>May 30, 2025</td>
+                                <td>XFCE</td>
+                                <td>x86_64</td>
+                                <td>~1.8 GB</td>
+                                <td>Lightweight option for older hardware</td>
                             </tr>
                         </tbody>
                     </table>
@@ -59,24 +84,29 @@
             </div>
             
             <div class="download-section">
-                <h2>Previous Releases</h2>
-                <p>No previous releases available yet.</p>
+                <h2>Build Your Own ISO</h2>
+                <p>If you prefer to build Chlorine Linux from source, you can follow our <a href="https://github.com/JJPEOPLES/chlorine/blob/master/BUILD_INSTRUCTIONS.md">build instructions</a> on GitHub.</p>
+                <p>Building from source allows you to customize the distribution to your specific needs.</p>
             </div>
             
             <div class="download-section">
                 <h2>Verifying Downloads</h2>
-                <p>To verify the integrity of your downloaded ISO file, you can use the SHA256 checksum provided above. Here's how to verify the checksum:</p>
+                <p>To verify the integrity of your downloaded ISO file, you can use the SHA256 checksum files provided alongside each ISO on our download portal. Here's how to verify the checksum:</p>
                 
                 <h3>On Linux:</h3>
-                <pre><code>sha256sum chlorine-1.0.iso</code></pre>
+                <pre><code>sha256sum -c chlorine-1.0-kde-x86_64.iso.sha256</code></pre>
+                <p>Or manually compare:</p>
+                <pre><code>sha256sum chlorine-1.0-kde-x86_64.iso</code></pre>
                 
                 <h3>On macOS:</h3>
-                <pre><code>shasum -a 256 chlorine-1.0.iso</code></pre>
+                <pre><code>shasum -a 256 -c chlorine-1.0-kde-x86_64.iso.sha256</code></pre>
+                <p>Or manually compare:</p>
+                <pre><code>shasum -a 256 chlorine-1.0-kde-x86_64.iso</code></pre>
                 
                 <h3>On Windows:</h3>
-                <pre><code>certUtil -hashfile chlorine-1.0.iso SHA256</code></pre>
+                <pre><code>certUtil -hashfile chlorine-1.0-kde-x86_64.iso SHA256</code></pre>
                 
-                <p>Compare the output with the SHA256 checksum provided on this page. If they match, your download is valid.</p>
+                <p>Compare the output with the SHA256 checksum provided on the download portal. If they match, your download is valid.</p>
             </div>
         </div>
     </section>
