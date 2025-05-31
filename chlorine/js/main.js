@@ -19,6 +19,15 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 document.addEventListener('DOMContentLoaded', function() {
     // This would be implemented if we had a mobile menu button
     // For now, we're using a responsive design that doesn't require a toggle
+    
+    // Ensure footer columns are properly displayed
+    const footerContent = document.querySelector('.footer-content');
+    if (footerContent) {
+        const columns = footerContent.querySelectorAll('.footer-links, .footer-logo');
+        if (window.innerWidth < 768 && columns.length > 3) {
+            footerContent.style.gridTemplateColumns = 'repeat(2, 1fr)';
+        }
+    }
 });
 
 // Update download information dynamically

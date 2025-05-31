@@ -342,7 +342,7 @@ footer {
 
 .footer-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 2rem;
     margin-bottom: 2rem;
 }
@@ -432,5 +432,15 @@ footer {
     
     section h2 {
         font-size: 2rem;
+    }
+    
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .footer-logo {
+        grid-column: 1 / -1;
+        align-items: center;
+        margin-bottom: 1rem;
     }
 }
