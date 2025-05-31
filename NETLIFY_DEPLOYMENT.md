@@ -13,18 +13,24 @@ Follow these steps to deploy the Chlorine Linux website to Netlify:
 5. Configure the deployment settings:
    - Branch to deploy: `master`
    - Base directory: (leave blank)
-   - Build command: (leave blank)
-   - Publish directory: `.`
+   - Build command: (leave blank or enter `echo 'No build command needed'`)
+   - Publish directory: `.` (just a dot)
 
 6. Click "Deploy site"
 
-7. Once deployed, go to "Site settings" > "Domain management"
+7. If you encounter any issues with the deployment, try these troubleshooting steps:
+   - Go to "Site settings" > "Build & deploy" > "Continuous Deployment"
+   - Make sure the "Base directory" is empty and the "Publish directory" is set to `.`
+   - Check the deploy logs for any errors
+   - If needed, you can manually deploy by clicking "Trigger deploy" > "Deploy site"
 
-8. Click "Add custom domain"
+8. Once deployed, go to "Site settings" > "Domain management"
 
-9. Enter "chlorine.k2lang.org" and follow the instructions to set up the domain
+9. Click "Add custom domain"
 
-10. After the domain is verified and the DNS is configured, enable HTTPS
+10. Enter "chlorine.k2lang.org" and follow the instructions to set up the domain
+
+11. After the domain is verified and the DNS is configured, enable HTTPS
 
 ## Setting up Large File Storage for ISOs
 

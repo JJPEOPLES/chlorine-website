@@ -1,4 +1,5 @@
 # Netlify configuration
+
 [build]
   publish = "."
   command = ""
